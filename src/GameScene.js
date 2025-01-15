@@ -8,19 +8,19 @@ export default class GameScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("background", "src/assets/Symbol 3 copy.png");
-    this.load.image("pump-top", "src/assets/Symbol 320001.png");
-    this.load.image("pump-body", "src/assets/Symbol 320003.png");
-    this.load.image("pump-left", "src/assets/Symbol 320002.png");
+    this.load.image("background", "assets/Symbol 3 copy.png");
+    this.load.image("pump-top", "assets/Symbol 320001.png");
+    this.load.image("pump-body", "assets/Symbol 320003.png");
+    this.load.image("pump-left", "assets/Symbol 320002.png");
 
     for (let i = 1; i <= 26; i++) {
       this.load.image(
         `balloon-${i}`,
-        `src/assets/Symbol 1000${i < 10 ? "0" + i : i}.png`
+        `assets/Symbol 1000${i < 10 ? "0" + i : i}.png`
       );
       this.load.image(
         `alphabet-${String.fromCharCode(96 + i)}`,
-        `src/assets/Symbol 100${i < 10 ? "0" + i : i}.png`
+        `assets/Symbol 100${i < 10 ? "0" + i : i}.png`
       );
     }
   }
